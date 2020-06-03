@@ -53,8 +53,8 @@ session_start();
                 $FechaServidorPHP =date("Y-m-d");
                 // echo $FechaServidorPHP . "<br>";
                 
-                if($FechaServidorPHP == "2020-02-20"){
-                    include("../tema/biblia/ReavivadosPalabra/02_20/20/preguntaBiblia_ReavivadosPalabra_$PreguntaParticipante.php");
+                if($FechaServidorPHP == "2019-10-01"){
+                    include("../tema/biblia/ReavivadosPalabra/10_19/01/preguntaBiblia_ReavivadosPalabra_$PreguntaParticipante.php");
                 }
                 else{
                     include("../tema/biblia/ReavivadosPalabra/02_20/21/preguntaBiblia_ReavivadosPalabra_$PreguntaParticipante.php");

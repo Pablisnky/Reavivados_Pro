@@ -33,7 +33,7 @@
                     <div class="contenedor_38">
                         <img class="imagen_14" alt="Fotografia Pablo Cabeza" src="../images/usuarios/2-min.jpg">
                         <label class="Inicio_10">Pablo Cabeza</label>
-                        <label class="Inicio_11">Desarrollador de aplicaciones web</label>
+                        <label class="Inicio_11">Programador BackEnd de aplicaciones web</label>
                         <!-- <label>CEO horebi.com</label> -->
                     </div>
                     <div onclick="ocultarMenu()">	

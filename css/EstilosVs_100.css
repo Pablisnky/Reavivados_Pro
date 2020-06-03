@@ -47,7 +47,7 @@ h1{/*todas las páginas*/
 	letter-spacing:1vw;
 	cursor: pointer;
 }
-h2{/*titulos de páginas*/
+h2{/*titulos de páginas      index.php*/
 	color:#040652;
 	font-family:verdana;
 	margin-top: 10%;
@@ -240,6 +240,11 @@ td{
 .a_7{
 	margin-right: -42%;
 }
+.a_8{/*index.php*/
+	position: absolute;
+	bottom: 15pt;
+	left: 38%;
+}
 .Afiliacion_3{/*datos_Personales.php*/
 	min-height: 220px !important;
 }
@@ -421,7 +426,7 @@ td{
 	box-shadow:0px 0px 0px;
 	color: white;			
 }
-.buttonCuatro{/*index.php  regisro_Libre.php*/
+.buttonCuatro{/*index.php  regisro_Libre.php   index.php*/
 	background:#040652;
 	color: rgba(194, 245, 19,1);
 	text-decoration:none;
@@ -733,6 +738,29 @@ td{
 .contenedor_41{/*MostrarDetallesTest.php*/
 	margin-top: 10%;
 } 
+.contenedor_42{/*index.php*/
+	min-height: 350px;
+	margin-top: 8%;
+	position: relative;
+} 
+.contenedor_42:hover{/*index.php*/
+	background-color: rgba(64, 224, 208, 0.3);/*Turquoise*/;
+	border-radius: 15px;
+} 
+
+	.contenedor_42a:before{ 
+		content : ""; 
+		position: absolute; 
+		left : 10%; 
+		bottom : 100%; 
+		height : 0px; 
+		width :  80%;
+		border-top: 3px solid rgba(64, 224, 208, 1);/*Turquoise*/;
+	} 
+	
+	
+
+
 .contenido_2{/*contacto.php*/
 	width: 90%;
 	height: 100px;
@@ -852,6 +880,13 @@ td{
 	width: 100%;
 	height: 40px;
 	line-height: 40px;
+}
+.h2_3{/*index.php*/
+	color: #040652;	
+	font-family:'Montserrat';
+	margin: 4% 0% 1% 0%;
+	text-align: center;
+	font-size: 2.5em;
 }
 .hr_1{/*pregunta.php*/
 	margin-top: -2%;
@@ -1067,12 +1102,12 @@ td{
 	margin: auto;
 	margin-top: 10%;
 }		
-.Inicio_13{/*index.php    equipo.php*/
+.Inicio_13{/*index.php */
+	background-color: #040652;
+	color:white ;
 	text-align: center;
-	margin-bottom: 2%;
-	margin-top:2%;
-	color:#040652 ;
-	width: 98%;
+	margin: 2% auto;
+	width: 90%;
 	font-size: 25px;
 	font-weight: bold;
 	font-family: 'Raleway', sans-serif;
@@ -1114,7 +1149,7 @@ td{
 	margin-top: 5%;
 	margin-bottom: 4%;
 	cursor: pointer;
-}	
+}
 .Inicio_21{/*participacionHoy.php   participacionHoy_Cont.php  sabiosConInsignias.php    sabiosSalon.php*/ 
 	font-family: 'Raleway', sans-serif;
 	width: 70%;
@@ -1401,7 +1436,7 @@ td{
     transition-timing-function: linear;
     transition-delay: 0.2s; */
 }
-.n00{/*index.php*/
+.n00{/*index.php */
 	display: none;
 	grid-row: 30% 30% 30%;
 	width: 100%;
@@ -1758,7 +1793,15 @@ td{
 }
 .p_10{/*ultima.php*/
 	font-size: 0.8em;
-}
+}		
+.p_11{/*index.php*/
+	font-size:1.2em;
+	line-height: 40px;
+	padding: 2%;
+	width: 80%; 
+	margin:auto;
+	text-align: center;
+}	
 .Quinto{/*contenedor de opciones para responder (preguntaXxxxx_00.php)*/
 	/* padding-top: 1%; */
 	padding-bottom: 3%;
@@ -1998,7 +2041,7 @@ ul .menuContenedor_2{/*header.php #040652  index.php*/
 	display: none;
 	position: absolute;
 	margin-left: 3%;
-	/* width: 15%; */
+	z-index: 5;
 	padding-top: 1%;
 }
 .menuLi_1:hover > ul{/*header.php   index.php*//*Se aplica un hover a un elemento seleccionando otro elemento distinto*/

@@ -18,8 +18,8 @@
         //  echo "ID_PP: " . $ID_PP . "<br>";
     }
 
-    if($Fecha == "2020/02/20"){
-       include("02_20/20/posicionReavivadosPalabra.php");
+    if($Fecha == "2019/10/01"){
+       include("10_19/01/posicionReavivadosPalabra.php");
     }
     else if($Fecha == "2020/02/21"){
         include("02_20/21/posicionReavivadosPalabra.php");

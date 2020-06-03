@@ -146,7 +146,7 @@ else{
 				
 								<input class="input_3" type="submit" value="Entrar" onclick=""><!-- validar_02() se encuentra en return validar_02()validarFormularios.js -->
 								<hr>
-								<p class="Inicio_1">¿Olvidaste tu contraseña <span class="span_7">Reavivados</span> ?
+								<p class="Inicio_1">¿Olvidaste tu contraseña?
 								<label class="a_4" onclick="NotificarContrasena()">Recuperala</label></p>
 								</fieldset>
 							</form>

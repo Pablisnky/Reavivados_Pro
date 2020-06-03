@@ -17,7 +17,8 @@
     <nav id="MenuResponsive" class="menuResponsive">
         <ul id="MenuContenedor">
             <li><a href="entrada.php">Inicio</a></li>
-            <li><a href="perfil.php">Mi perfil</a></li>
+            <li><a href="perfil.php">Perfil</a></li>
+            <li><a href="">Versiculos</a></li>
             <li><a href="participaciones.php">Resultados</a></li>
             <li><a href="participacionHoy_Cont.php">Sabios</a></li>
             <li><a href="cerrarSesion.php">Cerrar sesión</a></li> 

@@ -5,6 +5,8 @@ session_start();
 	include("modulos/noCache.php");
 	include("clases/imagenComentada.php");
 
+	$Titulo= "Reavivados";
+
 	//Se utiliza la hora de Colombia
 	date_default_timezone_set('America/Bogota');
 	$FechaServidorPHP =date("Y-m-d");
@@ -14,8 +16,8 @@ session_start();
 	$newFecha = date("d-m-Y", strtotime($FechaServidorPHP));
 	//echo $newFecha . "<br>";
 
-	if($FechaServidorPHP == "2020-02-20"){
-		$CapituloHoy = "Salmo 18";
+	if($FechaServidorPHP == "2019-10-01"){
+		$CapituloHoy = "1 Crónicas 16";
 		$_SESSION["Capitulo"] = $CapituloHoy;
 	}
 	else if($FechaServidorPHP == "2020-02-21"){
@@ -30,7 +32,7 @@ session_start();
 <!DOCTYPE html>
 <html lang="es">
 	<head>
-		<title>horebi</title>
+		<title><?php echo $Titulo;?></title>
 
 		<meta http-equiv="content-type"  content="text/html; charset=utf-8"/>
 		<meta name="description" content="Test biblico"/>
@@ -135,19 +137,38 @@ session_start();
 				</nav>
 			</header>
 			<div onclick="ocultarMenu()">
-				<p class="Inicio_13">Capítulo para hoy <?php echo $newFecha;?></p> 
-				<label class="Inicio_14" href=""><?php echo $CapituloHoy;?></label>
-				<div class="contenedor_33">				
-					<?php
-						$ImagenComentar= new imagenComentada();
+				<h2 class="h2_3">Somos una plataforma de estudios bíblicos.</h2>
+				<div style="grid-template-columns: 20fr 20fr 20fr; display: grid;">
+					<div class="contenedor_42">
+						<h2>Test de un libro bíblico</h2>
+						<p class="p_11">Los 66 libros biblicos contienen un reto que te esta esperando</p>
+						<a class="a_8 buttonCuatro" href="vista/principal.php">Entrar</a>					
+					</div>
+					<div class="contenedor_42 contenedor_42a">
+						<h2>Test del capitulo diario</h2>
+						<p class="p_11">Para hoy <?php echo $newFecha;?></p> 
+						<label class="Inicio_14" href=""><?php echo $CapituloHoy;?></label>
+						<div class="contenedor_33">				
+							<?php
+								// $ImagenComentar= new imagenComentada();
 
-						$ImagenComentar->ImagenIndex();
-					?>
-				</div>	 
-				<div class="contenedor_40">
-					<a class="buttonTres" href="vista/Estudios.php">Estudios biblicos</a>
-					<span class="span_12 span_13">Proximamente</span>	
+								// $ImagenComentar->ImagenIndex();
+							?>
+						</div>	 
+						<a class="a_8 buttonCuatro" href="vista/principal.php">Entrar</a>
+					</div>
+					<div class="contenedor_42">
+						<h2>Test de literatura cristiana</h2>
+						<p class="p_11">Planteamos un test de un capitulo de libros cristianos.</p>
+						<a class="a_8 buttonCuatro" href="vista/principal.php">Entrar</a>
+					</div>
+					<!-- <div class="contenedor_42">
+						<h2>Estudios bíblicos</h2>
+						<p class="p_11">Aprende de la biblia y conoce las verdades para alcanzar la vida eterna.</p>
+						<a class="a_8 buttonCuatro" href="vista/principal.php">Entrar</a>
+					</div> -->
 				</div>
+
 				<div class="contenedor_29 contenedor_29a">
 					<div class="n00">
 						<div>
@@ -155,18 +176,17 @@ session_start();
 						</div>	
 						<!-- <a class="buttonTres" href="vista/club.php">Club de lectura</a>	 -->
 						<div>
-							<a class="buttonTres" href="vista/Estudios.php">Estudios biblicos</a>
-							<span class="span_12 span_13">Proximamente</span>	
+							<p>Aprende de la biblia y conoce las verdades para alcanzar la vida eterna.</p>
 						</div>
 						<div>
 							<a class="buttonTres" href="vista/participacionHoy.php">Sabios de hoy</a>
 						</div>	
 					</div>			 
-					<div class="n20" onclick="ocultarMenu()">
+					<!-- <div class="n20" onclick="ocultarMenu()">
 						<h5>Lo que hacemos</h5>				
 						<p class="Inicio_1">Todos los días planteamos un test con 5 preguntas de un capítulo bíblico, en el que cada respuesta acertada es premiada con puntos, al finalizar la semana el día sábado, tenemos un maestro ganador que pasa a nuestro magno salón de los sabios. Para hoy estudiamos <b>"<?php echo $CapituloHoy;?>"</b>, registra una cuenta, toma el test, diviértete y pasa un momento ameno con los miembros de la comunidad.</p>
 						<a class="Inicio_3  buttonCuatro" href="vista/registro.php">Registrar cuenta</a>
-					</div>
+					</div> -->
 				</div>
 			</div> 
 		
